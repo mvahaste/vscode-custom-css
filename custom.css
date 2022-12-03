@@ -1,0 +1,44 @@
+/* Make rounded and give blur background, shadow */
+.monaco-editor .suggest-widget,
+.monaco-hover,
+.quick-input-widget,
+.monaco-menu-container {
+	border-radius: 10px !important;
+	box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.1) !important;
+	backdrop-filter: blur(25px) !important;
+	background-color: rgba(24, 24, 24, 0.5) !important;
+	overflow: hidden !important;
+}
+
+/* Make the command palette item background transparent */
+.quick-input-list * {
+	background: transparent !important;
+}
+
+/* Make the files/extensions/etc rounded */
+.pane-body .monaco-list-row {
+	border-radius: 5px !important;
+	margin: 4px !important;
+	width: 96% !important;
+}
+
+.pane-body .monaco-list-rows {
+	padding-bottom: 6px !important;
+}
+
+/* Make the window controls square, current 30x30, default 46x30 */
+.window-controls-container .window-icon {
+	width: 30px !important;
+}
+
+.monaco-workbench .part.titlebar > .window-controls-container {
+	width: auto !important;
+}
+
+/* Make the minimap slider rounded */
+.minimap-slider {
+	border-radius: 5px !important;
+}
+
+/* TODO: Context menu */
+/* .monaco-action-bar */
