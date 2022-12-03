@@ -1,7 +1,5 @@
 # VSCode Custom CSS
 
-Opinionated custom CSS for VSCode
-
 ## Features
 
 This CSS file adds rounded borders and/or background blur and box shadows to the following elements:
