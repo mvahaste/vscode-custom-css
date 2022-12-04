@@ -1,5 +1,5 @@
 /* ------------ */
-/* Version: 1.0 */
+/* Version: 1.1 */
 /* ------------ */
 
 /* Make rounded and give blur background, shadow */
@@ -10,13 +10,17 @@
 	border-radius: 10px !important;
 	box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.1) !important;
 	backdrop-filter: blur(25px) !important;
-	background-color: rgba(24, 24, 24, 0.5) !important;
+	background-color: rgba(26, 26, 26, 0.5) !important;
 	overflow: hidden !important;
 }
 
 /* Make the command palette item background transparent */
 .quick-input-list * {
 	background: transparent !important;
+}
+
+.quick-input-list .monaco-list .monaco-list-row.focused {
+	background: rgba(255, 255, 255, 0.075) !important;
 }
 
 /* Make the files/extensions/etc rounded */

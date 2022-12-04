@@ -1,5 +1,7 @@
 # VSCode Custom CSS
 
+Custom CSS for VSCode for some small improvements, just my personal preferences. Designed with the [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) (Darker) theme in mind.
+
 ## Features
 
 This CSS file adds rounded borders and/or background blur and box shadows to the following elements:
