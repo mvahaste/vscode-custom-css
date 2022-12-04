@@ -1,6 +1,6 @@
 # VSCode Custom CSS
 
-Custom CSS for VSCode for some small improvements, just my personal preferences. Designed with the [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) (Darker) theme in mind.
+Custom CSS for VSCode for some small improvements, just my personal preferences. Designed with the [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) (Darker) theme in mind. Only tested on Windows.
 
 ## Features
 
