@@ -4,14 +4,15 @@
 
 /* Make rounded and give blur background, shadow */
 .monaco-editor .suggest-widget,
-.monaco-hover,
+.monaco-editor .monaco-hover,
 .quick-input-widget,
 .monaco-menu-container {
-	border-radius: 10px !important;
-	box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.1) !important;
-	backdrop-filter: blur(25px) !important;
-	background-color: rgba(26, 26, 26, 0.5) !important;
 	overflow: hidden !important;
+	border-radius: 10px !important;
+	border: 1px solid rgba(24, 26, 31, 1) !important;
+	background: linear-gradient(135deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15)) !important;
+	backdrop-filter: blur(25px) !important;
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
 }
 
 /* Make the command palette item background transparent */
@@ -19,7 +20,7 @@
 	background: transparent !important;
 }
 
-.quick-input-list .monaco-list .monaco-list-row.focused {
+.quick-input-list .focused {
 	background: rgba(255, 255, 255, 0.075) !important;
 }
 
@@ -49,4 +50,4 @@
 }
 
 /* TODO: Context menu */
-/* .monaco-action-bar */
+/* .monaco-action-bar {} */
