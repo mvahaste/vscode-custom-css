@@ -1,53 +1,86 @@
 /* ------------ */
-/* Version: 1.1 */
+/* Version: 1.2 */
 /* ------------ */
 
-/* Make rounded and give blur background, shadow */
-.monaco-editor .suggest-widget,
-.monaco-editor .monaco-hover,
-.quick-input-widget,
-.monaco-menu-container {
+/* EVERYTHING THAT NEEDS ROUNDED CORNERS, BLUR & SHADOW */
+.monaco-editor .suggest-widget, /* Suggestions widget */
+.monaco-editor .monaco-hover, /* Hover widget */
+.quick-input-widget, /* Command palette */
+.editor-widget.parameter-hints-widget, /* Parameter hints */
+.monaco-hover /* Hover, tooltips widget */ {
 	overflow: hidden !important;
 	border-radius: 10px !important;
 	border: 1px solid rgba(24, 26, 31, 1) !important;
 	background: linear-gradient(135deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)) !important;
 	backdrop-filter: blur(25px) !important;
 	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
+	padding: 3px !important;
 }
 
+/* MENU WINDOWS, TOOLTIPS, ETC */
+/* Rounded corners for images, i.e user avatar in GitLive tooltip */
+.monaco-hover img {
+	border-radius: 5px !important;
+}
+
+/* SCROLLBARS */
+/* Make scrollbar slider rounded */
+.slider {
+	border-radius: 5px !important;
+}
+
+/* SUGGESTIONS WIDGET */
+/* Suggestions box tweaks */
+.monaco-editor .suggest-widget .monaco-list-row {
+	border-radius: 6px !important;
+}
+
+/* COMMAND PALETTE */
 /* Make the command palette item background transparent */
 .quick-input-list * {
 	background: transparent !important;
 }
 
+/* Focused option background color */
 .quick-input-list .focused {
-	background: rgba(255, 255, 255, 0.075) !important;
+	background: rgba(44, 49, 58, 1) !important;
 }
 
+/* Consistent border radius */
+.quick-input-list .monaco-list-rows .monaco-list-row {
+	border-radius: 5px !important;
+}
+
+/* FILE EXPLORER / EXTENSIONS / ETC VIEW */
 /* Make the files/extensions/etc rounded */
 .pane-body .monaco-list-row {
-	border-radius: 5px !important;
+	border-radius: 6px !important;
 	margin: 4px !important;
 	width: 96% !important;
 }
 
+/* Padding so the bottom doesn't get cut off */
 .pane-body .monaco-list-rows {
 	padding-bottom: 6px !important;
 }
 
+/* WINDOW CONTROLS */
 /* Make the window controls square, current 30x30, default 46x30 */
 .window-controls-container .window-icon {
 	width: 30px !important;
 }
 
+/* Fix the width */
 .monaco-workbench .part.titlebar > .window-controls-container {
 	width: auto !important;
 }
 
+/* MINIMAP */
 /* Make the minimap slider rounded */
 .minimap-slider {
 	border-radius: 5px !important;
 }
 
-/* TODO: Context menu */
+/* TODO: CONTEXT MENU */
 /* .monaco-action-bar {} */
+/* .monaco-menu-container {} */

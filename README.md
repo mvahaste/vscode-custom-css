@@ -6,7 +6,8 @@ Custom CSS for VSCode for some small improvements, just my personal preferences.
 
 This CSS file adds rounded borders and/or background blur and box shadows to the following elements:
 
--  IntelliSense suggestions box
+-  IntelliSense suggestions widget
+-  Parameter hints widget
 -  Editor hover tooltips
 -  Command palette
 -  Files/extensions/etc
