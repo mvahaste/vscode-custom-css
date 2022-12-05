@@ -1,5 +1,5 @@
 /* ------------ */
-/* Version: 1.3 */
+/* Version: 1.4 */
 /* ------------ */
 
 /* EVERYTHING THAT NEEDS ROUNDED CORNERS, BLUR & SHADOW */
@@ -12,7 +12,7 @@
 	border-radius: 10px !important;
 	border: 1px solid rgba(24, 26, 31, 1) !important;
 	background: linear-gradient(135deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)) !important;
-	backdrop-filter: blur(25px) !important;
+	backdrop-filter: blur(33px) !important;
 	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
 }
 
@@ -31,7 +31,10 @@
 /* SUGGESTIONS WIDGET */
 /* Give padding to make it nicer */
 .suggest-widget {
-	padding: 3px !important;
+	padding-top: 3px !important;
+	padding-left: 3px !important;
+	padding-right: 3px !important;
+	padding-bottom: 1px !important;
 }
 
 /* Make the rows rounded */
@@ -68,7 +71,7 @@
 
 /* Padding so the bottom doesn't get cut off */
 .pane-body .monaco-list-rows {
-	padding-bottom: 6px !important;
+	padding-bottom: 5px !important;
 }
 
 /* WINDOW CONTROLS */
