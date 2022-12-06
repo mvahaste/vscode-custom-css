@@ -1,14 +1,17 @@
 /* ------------ */
-/* Version: 1.5 */
+/* Version: 1.6 */
 /* ------------ */
 
 :root {
+	--is-suggest-widget-rounded: 1; /* Make suggestions widget rounded, 1 for yes, 0 for no */
+	--suggest-widget-padding: 3px; /* Suggestions widget padding */
+
 	--small-radius: 6px; /* Small border radius */
 	--normal-radius: 10px; /* Medium border radius */
-	--suggest-widget-padding: 2px; /* Suggestions widget padding */
-	--blur-size: 33px; /* Blur size */
-	--blur-gradient-from: rgba(18, 18, 18, 0.35); /* Blur gradient from */
-	--blur-gradient-to: rgba(18, 18, 18, 0.25); /* Blur gradient to */
+
+	--blur-size: 45px; /* Blur size */
+	--blur-gradient-from: rgba(12, 12, 12, 0.425); /* Blur gradient from */
+	--blur-gradient-to: rgba(12, 12, 12, 0.325); /* Blur gradient to */
 }
 
 /* EVERYTHING THAT NEEDS ROUNDED CORNERS, BLUR & SHADOW */
@@ -39,20 +42,21 @@
 /* SUGGESTIONS WIDGET */
 /* Give padding to make it nicer */
 .suggest-widget {
-	padding-top: var(--suggest-widget-padding) !important;
-	padding-left: var(--suggest-widget-padding) !important;
-	padding-right: var(--suggest-widget-padding) !important;
-	padding-bottom: calc(var(--suggest-widget-padding) / 3) !important;
+	padding-top: calc(var(--suggest-widget-padding) * var(--is-suggest-widget-rounded)) !important;
+	padding-left: calc(var(--suggest-widget-padding) * var(--is-suggest-widget-rounded)) !important;
+	padding-right: calc(var(--suggest-widget-padding) * var(--is-suggest-widget-rounded)) !important;
+	padding-bottom: calc(calc(var(--suggest-widget-padding) / 3) * var(--is-suggest-widget-rounded)) !important;
 }
 
 /* Make the rows rounded */
 .monaco-editor .suggest-widget .monaco-list-row {
-	border-radius: var(--small-radius) !important;
+	border-radius: calc(var(--small-radius) * var(--is-suggest-widget-rounded)) !important;
 }
 
 /* COMMAND PALETTE */
 /* Make the command palette item background transparent if it's not focused or hovered */
-.quick-input-list *:not(.focused):not(:hover) {
+.quick-input-list *:not(.focused):not(:hover),
+.quick-input-list .monaco-list-rows {
 	background: transparent !important;
 }
 
