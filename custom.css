@@ -3,7 +3,7 @@
 /* ------------ */
 
 :root {
-	--is-suggest-widget-rounded: 1; /* Make suggestions widget rounded, 1 for yes, 0 for no */
+	--is-suggest-widget-rounded: 0; /* Make suggestions widget rounded, 1 for yes, 0 for no */
 	--suggest-widget-padding: 3px; /* Suggestions widget padding */
 
 	--small-radius: 6px; /* Small border radius */
