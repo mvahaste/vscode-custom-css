@@ -1,6 +1,6 @@
 # VSCode Custom CSS
 
-Custom CSS for VSCode for some small improvements, just my personal preferences, easily configurable to your liking. Should work okay with most themes, but no guarantees. Only tested on Windows.
+Custom CSS for VSCode for some visual improvements, just my personal preferences, easily configurable to your liking. Should work okay with most themes, but no guarantees. Only tested on Windows.
 
 ## Features
 
