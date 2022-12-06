@@ -1,6 +1,15 @@
 /* ------------ */
-/* Version: 1.4 */
+/* Version: 1.5 */
 /* ------------ */
+
+:root {
+	--small-radius: 6px; /* Small border radius */
+	--normal-radius: 10px; /* Medium border radius */
+	--suggest-widget-padding: 2px; /* Suggestions widget padding */
+	--blur-size: 33px; /* Blur size */
+	--blur-gradient-from: rgba(18, 18, 18, 0.35); /* Blur gradient from */
+	--blur-gradient-to: rgba(18, 18, 18, 0.25); /* Blur gradient to */
+}
 
 /* EVERYTHING THAT NEEDS ROUNDED CORNERS, BLUR & SHADOW */
 .monaco-editor .suggest-widget, /* Suggestions widget */
@@ -9,62 +18,53 @@
 .editor-widget.parameter-hints-widget, /* Parameter hints */
 .monaco-hover /* Hover, tooltips widget */ {
 	overflow: hidden !important;
-	border-radius: 10px !important;
-	border: 1px solid rgba(24, 26, 31, 1) !important;
-	background: linear-gradient(135deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)) !important;
-	backdrop-filter: blur(33px) !important;
+	border-radius: var(--normal-radius) !important;
+	background: linear-gradient(135deg, var(--blur-gradient-from), var(--blur-gradient-to)) !important;
+	backdrop-filter: blur(var(--blur-size)) !important;
 	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
 }
 
 /* MENU WINDOWS, TOOLTIPS, ETC */
 /* Rounded corners for images, i.e user avatar in GitLive tooltip */
 .monaco-hover img {
-	border-radius: 5px !important;
+	border-radius: var(--small-radius) !important;
 }
 
 /* SCROLLBARS */
 /* Make scrollbar slider rounded */
 .slider {
-	border-radius: 5px !important;
+	border-radius: var(--small-radius) !important;
 }
 
 /* SUGGESTIONS WIDGET */
 /* Give padding to make it nicer */
 .suggest-widget {
-	padding-top: 3px !important;
-	padding-left: 3px !important;
-	padding-right: 3px !important;
-	padding-bottom: 1px !important;
+	padding-top: var(--suggest-widget-padding) !important;
+	padding-left: var(--suggest-widget-padding) !important;
+	padding-right: var(--suggest-widget-padding) !important;
+	padding-bottom: calc(var(--suggest-widget-padding) / 3) !important;
 }
 
 /* Make the rows rounded */
 .monaco-editor .suggest-widget .monaco-list-row {
-	border-radius: 5px !important;
+	border-radius: var(--small-radius) !important;
 }
 
 /* COMMAND PALETTE */
-/* Make the command palette item background transparent */
-.quick-input-list * {
+/* Make the command palette item background transparent if it's not focused or hovered */
+.quick-input-list *:not(.focused):not(:hover) {
 	background: transparent !important;
 }
 
-/* Focused option background color */
-.quick-input-list .focused {
-	background: rgba(44, 49, 58, 1) !important;
-}
-
-/* Hovered option bold font */
-/* .quick-input-list .monaco-list-row:hover {} */
-
 /* Consistent border radius */
 .quick-input-list .monaco-list-rows .monaco-list-row {
-	border-radius: 5px !important;
+	border-radius: var(--small-radius) !important;
 }
 
 /* FILE EXPLORER / EXTENSIONS / ETC VIEW */
 /* Make the files/extensions/etc rounded */
 .pane-body .monaco-list-row {
-	border-radius: 5px !important;
+	border-radius: var(--small-radius) !important;
 	margin: 4px !important;
 	width: 96% !important;
 }
@@ -88,7 +88,7 @@
 /* MINIMAP */
 /* Make the minimap slider rounded */
 .minimap-slider {
-	border-radius: 5px !important;
+	border-radius: var(--small-radius) !important;
 }
 
 /* TODO: CONTEXT MENU */
