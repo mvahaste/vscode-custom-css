@@ -1,5 +1,5 @@
 /* ------------ */
-/* Version: 1.6 */
+/* Version: 1.7 */
 /* ------------ */
 
 :root {
@@ -20,7 +20,8 @@
 .monaco-editor .monaco-hover, /* Hover widget */
 .quick-input-widget, /* Command palette */
 .editor-widget.parameter-hints-widget, /* Parameter hints */
-.monaco-hover /* Hover, tooltips widget */ {
+.monaco-hover, /* Hover, tooltips widget */ 
+.monaco-breadcrumbs-picker > div /* Breadcrumbs picker */ {
 	overflow: hidden !important;
 	border-radius: var(--normal-radius) !important;
 	background: linear-gradient(135deg, var(--blur-gradient-from), var(--blur-gradient-to)) !important;
@@ -106,6 +107,21 @@
 	border-radius: var(--small-radius) !important;
 }
 
+/* BREADCRUMBS PICKER */
+/* Make the rows rounded */
+.monaco-breadcrumbs-picker .monaco-list-row {
+	border-radius: var(--small-radius) !important;
+}
+
+/* Consistent padding */
+.monaco-breadcrumbs-picker > div {
+	padding: 5px !important;
+}
+
 /* TODO: CONTEXT MENU */
+
 /* .monaco-action-bar {} */
 /* .monaco-menu-container {} */
+
+/* Non-editor context menu selector for blur etc, still need to get editor context menu working */
+/* .context-view .monaco-scrollable-element */
