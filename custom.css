@@ -16,6 +16,7 @@
 
 /* EVERYTHING THAT NEEDS ROUNDED CORNERS, BLUR & SHADOW */
 .monaco-editor .suggest-widget, /* Suggestions widget */
+.monaco-editor .suggest-details, /* Suggestions details widget */
 .monaco-editor .monaco-hover, /* Hover widget */
 .quick-input-widget, /* Command palette */
 .editor-widget.parameter-hints-widget, /* Parameter hints */
@@ -53,6 +54,11 @@
 	border-radius: calc(var(--small-radius) * var(--is-suggest-widget-rounded)) !important;
 }
 
+/* Gap between the suggestions and suggestion details widgets */
+.monaco-editor .suggest-details {
+	margin-left: 10px !important;
+}
+
 /* COMMAND PALETTE */
 /* Make the command palette item background transparent if it's not focused or hovered */
 .quick-input-list *:not(.focused):not(:hover),
@@ -63,6 +69,11 @@
 /* Consistent border radius */
 .quick-input-list .monaco-list-rows .monaco-list-row {
 	border-radius: var(--small-radius) !important;
+}
+
+/* Make the bottom consistent with the edges */
+.quick-input-widget {
+	padding-bottom: 3px !important;
 }
 
 /* FILE EXPLORER / EXTENSIONS / ETC VIEW */
