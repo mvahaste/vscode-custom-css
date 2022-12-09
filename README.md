@@ -69,31 +69,31 @@ Add the following to your `settings.json`:
 
 ## Extra
 
-My changes to the [One Dark Pro Darker](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) theme to make it just a little nicer.
+My changes to the [One Dark Pro Darker](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) theme to make it just a little nicer. To use, add the following to your `settings.json`:
 
 ```json
-  "workbench.colorCustomizations": {
-    "[One Dark Pro Darker]": {
-      "editor.background": "#1e2227",
-      "sideBar.background": "#191d22",
-      "list.inactiveSelectionBackground": "#2d333d",
-      "list.hoverBackground": "#2d333d80",
-      "titleBar.activeBackground": "#1e2227",
-      "sideBarSectionHeader.background": "#1e2227",
-      "terminal.background": "#1e2227",
-    },
-  },
-  "editor.tokenColorCustomizations": {
-    "[One Dark Pro Darker]": {
-      "comments": "#5c6370",
-      "textMateRules": [
-        {
-          "scope": "comment",
-          "settings": {
-            "fontStyle": "italic"
-          }
+"workbench.colorCustomizations": {
+  "[One Dark Pro Darker]": {
+    "editor.background": "#1e2227",
+    "sideBar.background": "#191d22",
+    "list.inactiveSelectionBackground": "#2d333d",
+    "list.hoverBackground": "#2d333d80",
+    "titleBar.activeBackground": "#1e2227",
+    "sideBarSectionHeader.background": "#1e2227",
+    "terminal.background": "#1e2227"
+  }
+},
+"editor.tokenColorCustomizations": {
+  "[One Dark Pro Darker]": {
+    "comments": "#5c6370",
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
         }
-      ]
-    },
-  },
+      }
+    ]
+  }
+}
 ```
