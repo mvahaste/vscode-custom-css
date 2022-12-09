@@ -72,7 +72,6 @@ Add the following to your `settings.json`:
 My changes to the [One Dark Pro Darker](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) theme to make it just a little nicer.
 
 ```json
-// [One Dark Pro Darker] customizations
   "workbench.colorCustomizations": {
     "[One Dark Pro Darker]": {
       "editor.background": "#1e2227",
