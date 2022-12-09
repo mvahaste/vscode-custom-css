@@ -22,11 +22,13 @@
 .editor-widget.parameter-hints-widget, /* Parameter hints */
 .monaco-hover, /* Hover, tooltips widget */ 
 .monaco-breadcrumbs-picker > div /* Breadcrumbs picker */ {
-	overflow: hidden !important;
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
 	border-radius: var(--normal-radius) !important;
+	overflow: hidden !important;
+
+	/* Comment out these two lines if you use don't want the blur effect or use vibrancy (it breaks backdrop-filter) */
 	background: linear-gradient(135deg, var(--blur-gradient-from), var(--blur-gradient-to)) !important;
 	backdrop-filter: blur(var(--blur-size)) !important;
-	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
 }
 
 /* MENU WINDOWS, TOOLTIPS, ETC */
