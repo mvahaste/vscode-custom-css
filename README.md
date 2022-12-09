@@ -66,3 +66,35 @@ Add the following to your `settings.json`:
   "file:///path/to/vscode-custom-css/custom.css"
 ],
 ```
+
+## Extra
+
+My changes to the [One Dark Pro Darker](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) theme to make it just a little nicer.
+
+```json
+// [One Dark Pro Darker] customizations
+  "workbench.colorCustomizations": {
+    "[One Dark Pro Darker]": {
+      "editor.background": "#1e2227",
+      "sideBar.background": "#191d22",
+      "list.inactiveSelectionBackground": "#2d333d",
+      "list.hoverBackground": "#2d333d80",
+      "titleBar.activeBackground": "#1e2227",
+      "sideBarSectionHeader.background": "#1e2227",
+      "terminal.background": "#1e2227",
+    },
+  },
+  "editor.tokenColorCustomizations": {
+    "[One Dark Pro Darker]": {
+      "comments": "#5c6370",
+      "textMateRules": [
+        {
+          "scope": "comment",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        }
+      ]
+    },
+  },
+```
