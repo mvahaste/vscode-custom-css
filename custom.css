@@ -5,7 +5,7 @@
 :root {
 	--is-suggest-widget-rounded: 0; /* Make suggestions widget rounded, 1 for yes, 0 for no */
 	--suggest-widget-padding: 3px; /* Suggestions widget padding */
-	--suggest-icons-saturation: 75%; /* Suggestions widget icons saturation, default is 100% */
+	--suggest-icons-saturation: 50%; /* Suggestions widget icons saturation, default is 100% */
 
 	--small-radius: 6px; /* Small border radius */
 	--normal-radius: 10px; /* Medium border radius */
