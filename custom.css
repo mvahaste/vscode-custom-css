@@ -27,7 +27,7 @@
 	border-radius: var(--normal-radius) !important;
 	overflow: hidden !important;
 
-	/* Comment out these two lines if you use don't want the blur effect or use vibrancy (it breaks backdrop-filter) */
+	/* Comment/uncomment these two lines if you use want/don't want the blur effect (blur doesn't work with Vibrancy) */
 	/* background: linear-gradient(135deg, var(--blur-gradient-from), var(--blur-gradient-to)) !important; */
 	/* backdrop-filter: blur(var(--blur-size)) !important; */
 }
