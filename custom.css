@@ -1,5 +1,5 @@
 /* ------------ */
-/* Version: 1.7 */
+/* Version: 1.8 */
 /* ------------ */
 
 :root {
@@ -28,8 +28,8 @@
 	overflow: hidden !important;
 
 	/* Comment out these two lines if you use don't want the blur effect or use vibrancy (it breaks backdrop-filter) */
-	background: linear-gradient(135deg, var(--blur-gradient-from), var(--blur-gradient-to)) !important;
-	backdrop-filter: blur(var(--blur-size)) !important;
+	/* background: linear-gradient(135deg, var(--blur-gradient-from), var(--blur-gradient-to)) !important; */
+	/* backdrop-filter: blur(var(--blur-size)) !important; */
 }
 
 /* MENU WINDOWS, TOOLTIPS, ETC */
@@ -97,15 +97,11 @@
 	padding-bottom: 5px !important;
 }
 
-/* WINDOW CONTROLS */
-/* Make the window controls square, current 30x30, default 46x30 */
-.window-controls-container .window-icon {
-	width: 30px !important;
-}
-
-/* Fix the width */
-.monaco-workbench .part.titlebar > .window-controls-container {
-	width: auto !important;
+/* TITLE BAR */
+/* Hide the VSCode icon */
+.window-appicon {
+	opacity: 0 !important;
+	width: 4px !important;
 }
 
 /* MINIMAP */

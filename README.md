@@ -13,8 +13,7 @@ This CSS file adds rounded borders and/or background blur and box shadows to the
 -  Files/extensions/etc
 -  Minimap slider
 -  Breadcrumbs widget
-
-It also resizes the window controls to be square.
+-  Hide the VSCode icon in the title bar
 
 ## Screenshots
 
