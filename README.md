@@ -96,3 +96,15 @@ My changes to the [One Dark Pro Darker](https://marketplace.visualstudio.com/ite
   }
 }
 ```
+
+### Customization tips
+
+Toggle the developer tools from the command palette to view element classes, properties, etc. Use the inspecter to target specific elements.
+
+The JavaScript snippet below can make it easier to inspect elements that don't play nice, just paste it into the console and VSCode will be paused in debug mode after a 3 second delay. Close the developer tools to resume.
+
+```js
+setTimeout(function () {
+	debugger;
+}, 3000);
+```
