@@ -1,16 +1,17 @@
 /* ------------ */
-/* Version: 1.7 */
+/* Version: 1.8 */
 /* ------------ */
 
 :root {
-	--is-suggest-widget-rounded: 1; /* Make suggestions widget rounded, 1 for yes, 0 for no */
+	--is-suggest-widget-rounded: 0; /* Make suggestions widget rounded, 1 for yes, 0 for no */
 	--suggest-widget-padding: 3px; /* Suggestions widget padding */
+	--suggest-icons-saturation: 100%; /* Suggestions widget icons saturation, default is 100% */
 
 	--small-radius: 6px; /* Small border radius */
 	--normal-radius: 10px; /* Medium border radius */
 
 	--blur-size: 45px; /* Blur size */
-	--blur-gradient-from: rgba(12, 12, 12, 0.425); /* Blur gradient from */
+	--blur-gradient-from: rgba(12, 12, 12, 0.4); /* Blur gradient from */
 	--blur-gradient-to: rgba(12, 12, 12, 0.325); /* Blur gradient to */
 }
 
@@ -22,11 +23,13 @@
 .editor-widget.parameter-hints-widget, /* Parameter hints */
 .monaco-hover, /* Hover, tooltips widget */ 
 .monaco-breadcrumbs-picker > div /* Breadcrumbs picker */ {
-	overflow: hidden !important;
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
 	border-radius: var(--normal-radius) !important;
+	overflow: hidden !important;
+
+	/* Comment/uncomment these two lines if you use want/don't want the blur effect (blur doesn't work with Vibrancy) */
 	background: linear-gradient(135deg, var(--blur-gradient-from), var(--blur-gradient-to)) !important;
 	backdrop-filter: blur(var(--blur-size)) !important;
-	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
 }
 
 /* MENU WINDOWS, TOOLTIPS, ETC */
@@ -60,6 +63,10 @@
 	margin-left: 10px !important;
 }
 
+.suggest-widget .suggest-icon {
+	filter: saturate(var(--suggest-icons-saturation)) !important;
+}
+
 /* COMMAND PALETTE */
 /* Make the command palette item background transparent if it's not focused or hovered */
 .quick-input-list *:not(.focused):not(:hover),
@@ -90,15 +97,11 @@
 	padding-bottom: 5px !important;
 }
 
-/* WINDOW CONTROLS */
-/* Make the window controls square, current 30x30, default 46x30 */
-.window-controls-container .window-icon {
-	width: 30px !important;
-}
-
-/* Fix the width */
-.monaco-workbench .part.titlebar > .window-controls-container {
-	width: auto !important;
+/* TITLE BAR */
+/* Hide the VSCode icon */
+.window-appicon {
+	opacity: 0 !important;
+	width: 4px !important;
 }
 
 /* MINIMAP */

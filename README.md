@@ -13,8 +13,7 @@ This CSS file adds rounded borders and/or background blur and box shadows to the
 -  Files/extensions/etc
 -  Minimap slider
 -  Breadcrumbs widget
-
-It also resizes the window controls to be square.
+-  Hide the VSCode icon in the title bar
 
 ## Screenshots
 
@@ -69,6 +68,8 @@ Add the following to your `settings.json`:
 
 ## Extra
 
+### Theme tweaks
+
 My changes to the [One Dark Pro Darker](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) theme to make it just a little nicer. To use, add the following to your `settings.json`:
 
 ```json
@@ -96,4 +97,16 @@ My changes to the [One Dark Pro Darker](https://marketplace.visualstudio.com/ite
     ]
   }
 }
+```
+
+### Customization tips
+
+Toggle the developer tools from the command palette to view element classes, properties, etc. Use the inspecter to target specific elements.
+
+The JavaScript snippet below can make it easier to inspect elements that don't play nice, just paste it into the console and VSCode will be paused in debug mode after a 3 second delay. Close the developer tools to resume.
+
+```js
+setTimeout(function () {
+	debugger;
+}, 3000);
 ```
