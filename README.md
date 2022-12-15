@@ -68,6 +68,8 @@ Add the following to your `settings.json`:
 
 ## Extra
 
+### Theme tweaks
+
 My changes to the [One Dark Pro Darker](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) theme to make it just a little nicer. To use, add the following to your `settings.json`:
 
 ```json
