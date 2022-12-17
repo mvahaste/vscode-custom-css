@@ -11,8 +11,8 @@
 	--normal-radius: 10px; /* Medium border radius */
 
 	--blur-size: 45px; /* Blur size */
-	--blur-gradient-from: rgba(12, 12, 12, 0.4); /* Blur gradient from */
-	--blur-gradient-to: rgba(12, 12, 12, 0.325); /* Blur gradient to */
+	--blur-gradient-from: rgba(0, 0, 0, 0.5); /* Blur gradient from */
+	--blur-gradient-to: rgba(0, 0, 0, 0.425); /* Blur gradient to */
 }
 
 /* EVERYTHING THAT NEEDS ROUNDED CORNERS, BLUR & SHADOW */
